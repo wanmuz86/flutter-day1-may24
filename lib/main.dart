@@ -72,6 +72,8 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 8,),
               Image.network("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/473000/473015-Kuala-Lumpur.jpg"),
               SizedBox(height: 8,),
+              Image.asset("images/app_poster.png"),
+              SizedBox(height: 8,),
               TextField(
                 controller: nameEditingController,
                 decoration:
