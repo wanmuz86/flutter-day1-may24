@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,12 +42,18 @@ class HomePage extends StatelessWidget {
             children: [
               Text(
                 "Hello world",
-                style: TextStyle(fontSize: 32, color: Colors.red),
+                style: GoogleFonts.quicksand(
+                  textStyle:TextStyle(fontSize: 32, color: Colors.red)
+                ),
               ),
               SizedBox(height: 8,),
               Text(
                 "Welcome to my app",
-                style: TextStyle(fontSize: 24, color: Colors.cyanAccent),
+                // THe font is camelCase whenever there is a space in font name in Google Font web
+                // It will become capital letter here
+                style: GoogleFonts.bebasNeue(
+                  textStyle:TextStyle(fontSize: 24, color: Colors.cyanAccent)
+                ),
               ),
               SizedBox(height: 8,),
               Text(
