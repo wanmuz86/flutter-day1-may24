@@ -71,7 +71,10 @@ class HomePage extends StatelessWidget {
                 InputDecoration(hintText: "Enter your name"),),
               TextButton(
                 onPressed: (){
-                  print("Hello ${nameEditingController.text}");
+                  var snackBar = SnackBar(content: Text("Hello ${nameEditingController.text}"));
+                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
+
+                  // print("Hello ${nameEditingController.text}");
                 },
                 child: Text("Press me!"),
               )
