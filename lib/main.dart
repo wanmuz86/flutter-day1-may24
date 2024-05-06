@@ -33,9 +33,28 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Text(
-          "Hello world",
-          style: TextStyle(fontSize: 32, color: Colors.red),
+        child: Column(
+          children: [
+            Text(
+              "Hello world",
+              style: TextStyle(fontSize: 32, color: Colors.red),
+            ),
+            Text(
+              "Welcome to my app",
+              style: TextStyle(fontSize: 24, color: Colors.cyanAccent),
+            ),
+            Text(
+              "I hope you enjoy it",
+              style: TextStyle(fontSize: 20, color: Colors.deepPurple),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("This is left", style: TextStyle(fontSize: 20, color: Colors.deepPurple),),
+                Text("This is right", style: TextStyle(fontSize: 20, color: Colors.deepPurple),)
+              ],
+            )
+          ],
         ),
       ),
     );
